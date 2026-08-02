@@ -1,21 +1,57 @@
-# Higgsfield prompt bank (R3 rewrites weekly; R2 reads daily)
-Refreshed 2026-07-26 against intelligence/angle-weights.json.
-Base style (all): premium DARK certificate showcase, 1080x1350, crisp typography, mobile-first legibility, honest claims, no fabricated authorities/dates/signatures, no unlicensed employer logo walls. Vary persona x angle x hook per angle-weights.json — NEVER only font/background. AI-rendered seal text ("INDUSTRY RECOGNIZED") is a known failure point — composite the seal post-generation (Y2 rule), never rely on AI text rendering for it.
+# Prompt Bank — refreshed 2026-08-02 (R3 scheduled Sunday run)
 
-- shark_tank_trust (weight 0.32, still top angle but SOFTENING — lean in on HR pairing specifically, be cautious pairing with other domains): dark hero with "As seen on Shark Tank India" badge, cert front-and-center, verify-QR corner. This week's HR variant still cleared 1.34 roas at real spend (₹8,826) but a DigitalMarketing pairing read weak and a DataAnalytics pairing read 0.00 — do not assume this angle transfers cleanly across domains, prioritize new concepts on human-resource. No unlicensed employer logos (Meta Fraud/Deceptive risk — see e06_sti compliance rebuild history).
-- wachat_selected (weight 0.24, UP — 2nd straight positive week, now the single highest-priority angle to ship on): WhatsApp chat UI screenshot style, "Congratulations! You're selected" message thread, cert preview attached, [domain] variant. The mandatory hr_wachat.png template STILL needs its OCR/legibility fix (R3-20260712-01) before shipping new concepts on it — but given this angle just posted 2.39/2.10 roas this week, fixing that template is now the top R2 creative priority. Two funded new bets are waiting on it: cybersecurity_x_wachat_selected and wachat_selected_x_finance.
-- interview_outcome (weight 0.16, UP): chat/notification style "Shortlisted within a week", cert + timeline visual. The CyberSecurity variant read 1.95 roas on ₹5,845 spend this week — the best real-volume ad in the account. Prioritize more cyber-security concepts on this angle.
-- score_proof (weight 0.09): blurred score reveal "Prove your 84%", LinkedIn share mock, unlock CTA — clear English, never literal lorem-ipsum.
-- recruiter_recognition (weight 0.04, weakest — deprioritize new concepts): "Recognised by 1,100+ companies" (substantiated number only, never logos), recruiter POV frame.
-- resume_proof (weight 0.09): resume/CV mock with a certificate-backed callout, "Your resume says you can. This certificate proves it." — pair preferentially with human-resource domain. "Resume looks empty compared to peers" was the single most-repeated worry in this week's fresh feedback rows — this angle's core insight is confirmed live.
-- skills_current (weight 0.06): "skills outdated" worry-cluster framing, before/after skill-currency visual. "Current skills feel outdated / irrelevant" was the 2nd-most-repeated worry in this week's fresh feedback.
+Weights live in `beep-cert-ops/intelligence/angle-weights.json` (as_of 2026-08-02).
+Domains come from `beep-cert-ops/intelligence/skill-economics.json` target_share — **never** encode a domain bias here.
+Codex is binding: dark statics, one mechanic line, honest claims, no video/UGC, no price in a cold hook.
 
-price_risk_free_199 stays BANNED for cold traffic — do NOT generate new concepts on this angle. It spiked again in the prior-week pull this run (3.59 roas on ₹361 spend) — the 3rd small-spend outlier in ~3 weeks. The ban stands pending an audience-targeting investigation, not a performance re-read; three recurrences argue for actually resolving the [INVESTIGATE] item soon, not for lifting the ban informally.
+> **All performance figures below are META-ATTRIBUTED, UNVERIFIED AT BANK.** utm_content coverage 1.6%; Razorpay session-blocked for a 5th cycle.
 
-## New-bet discovery seeds (kill criteria <1.0 banked @Rs300/48h on all)
-- finance_x_shark_tank_trust: "The certificate Sharks backed — now prove your Finance skills." (live as stt_fin_0715_2, >48h, no signal yet either week)
-- cybersecurity_x_wachat_selected: "Congratulations! You're selected — your Cyber Security certificate is ready to download." (BLOCKED — hold until the wachat template is fixed; now the single highest-priority unblock given wachat_selected's 2-week run)
-- resume_proof_x_human_resource: "Your resume says you can. This certificate proves it." (live as nb_resume_hr_0716_9, >48h, no signal yet)
-- shark_tank_trust_x_cyber_security: "The certificate Sharks backed — now prove your Cyber Security skills." — not yet shipped; highest-confidence untested combo while wachat_selected is blocked.
-- score_proof_x_human_resource: "Your score is in — reveal it and unlock your HR certificate." — not yet shipped.
-- wachat_selected_x_finance (NEW 26-Jul): "Congratulations! You're selected — your Finance certificate is ready to download." — not yet shipped, same template block as cybersecurity_x_wachat_selected; ship both together once the fix lands.
+---
+
+## 1. shark_tank_trust — weight 0.34 (winning angle of the week)
+**Evidence:** 19 ads, ₹100,295, Meta ROAS 1.140, 479 purchases. Best large family on the board.
+**Reference:** `03 SharkTrust Finance | STAG | Fresh 28Jul` (1.53 on ₹8,181/60) · `02 SharkTrust HR | STAG` (1.33 on ₹5,290/30) · `03 SharkTrust AI | Fresh 25Jul` (1.84 on ₹513/5)
+**Prompt seed:** Dark static. Shark-Tank-backed trust mark, top-left. Line 1 names the domain outcome. Line 2 is the mechanic: "Verified score, dated certificate, 10 minutes." Domain token visible. No price.
+**Domains:** HR, Cyber, AI, Finance (per target_share).
+
+## 2. score_proof — weight 0.14
+**Evidence:** 1.371 on ₹581/3 — best per-rupee return of any family; promoted from new_bet.
+**Reference:** `03 ScoreProof HR NEWBET | Fresh 26Jul`
+**Prompt seed:** Dark static. The score band is the hero — a visible graded result, not a claim. Line 1: "You scored 78%." Line 2: "Now it is on a certificate recruiters can verify."
+**Needs:** ≥₹2,000 to confirm.
+
+## 3. resume_proof — weight 0.14
+**Evidence:** 1.296 on ₹539/1, **plus 133/887 feedback rows** ("Resume looks empty compared to peers", 21.0% of specific-pain respondents). Underfunded, not underperforming.
+**Reference:** `09 ResumeProof DigitalMarketing | Fresh 25Jul`
+**Prompt seed:** Dark static, split composition. Left: an empty resume block. Right: the same block with a dated, verifiable credential. Line: "The difference is one line. Verified."
+
+## 4. wachat_selected — weight 0.13 (DOWN-WEIGHTED)
+**Evidence:** 0.925 on ₹22,123/98 across 7 ads. **Was 1.51 on the quiz-LP; it has decayed under scale.** Keep funded, no longer a lead angle.
+**Prompt seed:** Selection/shortlist framing without the WhatsApp chrome — the chrome is what fatigued. Lead with the selection decision, not the channel.
+
+## 5. interview_outcome — weight 0.13 (HELD despite 0.907)
+**Evidence:** 0.907 on ₹23,541/96. Held because the demand is the strongest in the dataset — **168/887 feedback rows** ("Not getting interview calls despite applying") is now the **#1 named pain**, ahead of resume_empty. `03 InterviewShortlist Finance` burned ₹1,213 at 0.00: the angle is right, the execution is wrong.
+**Fix:** current executions state the OUTCOME without a MECHANIC. See new bet `interview_callback_mechanic`.
+
+## 6. authority_newdomain — weight 0.07
+**Evidence:** 0.927 on ₹10,617/31, but `Certified Accountant | Authority | 27Jul` returned **3.24 on ₹461/4** — the best ROAS on the board.
+**Prompt seed:** Professional register, authority seal motif. "<Role> without the certification is just experience." / "Verified credential, 10 minutes, dated."
+**Critical:** run these SKUs at **₹199**, not ₹299/₹499. The domains convert at 9.6–16.7% at the paywall; the ₹299/₹499 lanes die at LPV→Checkout (5.6–7.6% vs 14.3% blended).
+
+## 7. skills_current — weight 0.05 (token)
+**Evidence:** 0.282 on ₹1,235/2 — breached its own kill criterion. Demand is real (150/887) but the creative execution failed. Any re-run needs a **new mechanic, not a re-skin**.
+
+---
+
+## New bets (R2 exploration quota) — kill: <1.0 banked @ ₹300/48h
+1. **career_gap_explainer** — 43/887 name a career gap; +48 more want to switch fields (91 total, 14.4% of specific-pain). Zero concepts in the bank address it.
+   Seed: "A 9-month gap on your resume." / "This is what you put next to it."
+2. **interview_callback_mechanic** — name the ATS/skill-verification screen that rejects before a human reads.
+   Seed: "400 applications. 0 calls." / "The screen rejects you before a human reads it. Verified skills clear the screen."
+3. **authority_professional_sku** — authority angle on legal/accounting SKUs at ₹199.
+
+## Banned (do not generate)
+- Price-led cold hooks — `05 Python Risk-Free 199` 0.00 on ₹499 this week; 11th consecutive failure.
+- Video / creator-UGC for cold direct-to-checkout — `VideoCreativeTest 29July` 0.618 on ₹1,031, paused day 1.
+- Direct-checkout deep-link concepts (0.23–0.70 every attempt).
+- Generic outcome hooks with no domain token — `EastZone | GetAICertified` 0.00 on ₹358.
